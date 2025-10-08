@@ -13,7 +13,6 @@ async def post_products(
     descreption: str | None = Form(None),
     price:float = Form(),
     images:List[UploadFile] = File()
-
 ):
     return {
         "responce":name
